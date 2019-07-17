@@ -76,10 +76,21 @@ section {
   hover: When mouse is hovering over the link
 
 */
-.topnav {
+nav {
   padding: 1.2rem;
+  z-index: 9999;
+  background: transparent;
+  position: fixed;
+  width: 100%;
 }
-.topnav a {
+
+.jqnav {
+  background: rgba(45, 45, 45, 0.98);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.01);
+  transition: all 1s ease;
+}
+
+nav a {
   float: right;
   color: white;
   text-align: center;
@@ -88,7 +99,7 @@ section {
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
-.topnav a:hover {
+nav a:hover {
   text-decoration-line: underline;
   text-decoration-color: #16a085;
   color: #16a085;

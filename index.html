@@ -24,30 +24,42 @@
       media="screen"
       href="css/style.css"
     />
-    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/query.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
   </head>
   <body>
     <section id="one">
-      <div class="topnav">
+      <nav class="animated fadeInUp delay-0.2s">
         <a href="#contact">CONTACT US</a>
         <a href="#register">SIGN UP</a>
         <a href="#reviews">REVIEWS</a>
         <a href="#location">OUR CITIES</a>
         <a href="#steps">HOW IT WORKS</a>
         <a href="#two">FOOD DELIVERY</a>
-      </div>
-      <div class="header-text-box">
-        <h1>
+      </nav>
+      <div class="header-text-box" >
+        <h1 class="animated fadeInUp delay-0.2s">
           GOODBYE JUNK FOOD.<br />
           HELLO SUPER HEALTHY MEALS
         </h1>
         <button
           onclick="window.location.href = '#steps' "
           class="button button2"
+          class="animated fadeInUp delay-0.2s"
         >
           <span>I'm Hungry</span>
         </button>
-        <button onclick="window.location.href = '#two' " class="button button2">
+        <button onclick="window.location.href = '#two' " class="button button2"
+        
+        >
           <span>Show me More</span>
         </button>
       </div>
@@ -395,7 +407,7 @@
           </div>
           <div class="row">
             <p>How did you find out about us?</p>
-            <select name="How" >
+            <select name="How">
               <option value="Friend">Friends</option>
               <option value="Billboards">Via Billboards</option>
               <option value="Ads">Via TV/Internet ads</option>
@@ -423,9 +435,11 @@
         </form>
       </div>
     </section>
-    <footer>
-      <p>&copy; Omnifoods</p>
-
-    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
